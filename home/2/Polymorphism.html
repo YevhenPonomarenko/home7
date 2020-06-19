@@ -1,0 +1,68 @@
+<!-- Реализуйте последние 2 слайда в презентации с помощью пройденого на уроке материала -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework</title>
+    
+</head>
+<body>
+	<script type="text/javascript">
+		class Cure {
+			constructor(cureOption) {
+				this.cureOption = cureOption;
+			}
+
+			cure() {
+				return this.cureOption
+			}
+		}
+		class Doctor {
+		    constructor() {}
+
+			walk() {
+				console.log('doctorWalk');
+			}
+
+			eat() {
+				console.log('doctorEat');
+			}
+
+			drink() {
+				console.log('doctorDrink');
+			}
+
+			cure() {
+				var test = new Cure('doctorHealth');
+				console.log(test.cure());
+			}
+		}
+
+		class Surgeon {
+		    constructor() {}
+
+			walk() {
+				console.log('doctorWalk');
+			}
+
+			eat() {
+				console.log('doctorEat');
+			}
+
+			drink() {
+				console.log('doctorDrink');
+			}
+
+			cure() {
+				var test = new Cure('surgeonHealth');
+				console.log(test.cure());
+			}
+		}
+
+		var doctor = new Doctor();
+		var surgeon = new Surgeon();
+		doctor.cure();
+		surgeon.cure();
+	</script>
+</body>
+</html>

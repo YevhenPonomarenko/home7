@@ -1,0 +1,22 @@
+<!-- Создайте функцию, которая возвращает день недели для даты.
+День нужно возвратить в формате - понедельник имеет номер 1, вторник номер 2, …, воскресенье - номер 7. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework</title>
+</head>
+<body>
+<input type="text">
+<script>
+    var input = document.querySelector("input"); 
+    input.addEventListener('change', (event) => {
+        var text = event.target.value;
+        var date = new Date(text);
+        let days = ['7','1', '2', '3', '4', '5', '6'];
+        console.log(date);
+        alert(days[date.getDay()]);
+})  
+</script>
+</body>
+</html>

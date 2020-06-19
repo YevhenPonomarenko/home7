@@ -1,0 +1,48 @@
+<!-- Реализуйте последние 2 слайда в презентации с помощью пройденого на уроке материала -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework</title>
+    
+</head>
+<body>
+	<script type="text/javascript">
+		class Man {
+		  constructor() {}
+
+		  walk() {
+		  	console.log('walk');
+		  }
+
+		  eat() {
+		  	console.log('eat');
+		  }
+
+		  drink() {
+		  	console.log('drink');
+		  }
+		}
+
+		class Soldier extends Man {
+		  shoot() {
+		  	console.log('shoot');
+		  }
+		}
+
+		class Doctor extends Man {
+		  cure() {
+		  	console.log('cure');
+		  }
+		}
+
+		var man = new Man();
+		var doctor = new Doctor();
+		var soldier = new Soldier();
+
+		man.eat();
+		doctor.walk();
+		soldier.drink();
+	</script>
+</body>
+</html>
